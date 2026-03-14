@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - BlueBee Laundry</title>
+    <style>
+        /* Reusing your exact variables for consistency */
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Nunito:wght@500;700&display=swap');
+        
+        :root {
+            --color-text: #2c3e50;
+            --color-primary: #563ce7;
+            --font-family-sans-serif: "Nunito", sans-serif;
+            --navbar-height: 80px;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-family-sans-serif);
+            background-color: #f2f5f7; /* Matching your light blue theme */
+            color: var(--color-text);
+        }
+
+        /* Navbar Styling (Same as your Home page) */
+        .navbar {
+            height: var(--navbar-height);
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .navbar__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        .navbar__brand { 
+            font-family: 'Fredoka', sans-serif;
+            font-size: 2rem; 
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+        .navbar__list { display: flex; list-style: none; gap: 20px; }
+        .navbar__link { text-decoration: none; color: inherit; font-weight: 700; }
+
+        /* About Content Section */
+        .about-section {
+            max-width: 800px;
+            margin: 100px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        h1 { color: var(--color-primary); font-size: 2.5rem; }
+        p { line-height: 1.8; font-size: 1.1rem; }
+        
+        .back-home {
+            display: inline-block;
+            margin-top: 20px;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" class="navbar__brand">BlueBee</a>
+            <nav>
+                <ul class="navbar__list">
+                    <li><a href="index.html" class="navbar__link">Home</a></li>
+                    <li><a href="about.html" class="navbar__link" style="color: var(--color-primary);">About Us</a></li>
+                    <li><a href="#" class="navbar__link">Location</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="about-section">
+        <h1>Our Story</h1>
+        <p>
+            Welcome to <strong>BlueBee Laundry</strong>! We started with a simple idea: 
+            Laundry shouldn't be a chore that takes up your weekend. We combine 
+            modern technology with premium care to ensure your clothes come back 
+            fresh, folded, and perfect every single time.
+        </p>
+        <p>
+            Whether it's your everyday wear or your most delicate fabrics, 
+            we treat every item like it's our own.
+        </p>
+         <h1>Where We Are</h1>
+         <p>
+           We are located near Atabay Elementary School,
+            making our place easy to find for students,
+            parents, and residents in the surrounding community.
+
+         </p>
+         <img src="srca.png" alt="srca" width="700" height="500">
+        <a href="index.html" class="back-home">← Back to Home</a>
+    </main>
+
+</body>
+</html>
